@@ -1,0 +1,72 @@
+body{
+	background-image: url('trippy.jpg');
+	margin: 0px;
+
+}
+
+.controls {
+  visibility: hidden;
+  opacity: 0.5;
+  width: 400px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -200px;
+  background-color: black;
+  box-shadow: 3px 3px 5px black;
+  transition: 1s all;
+  display: flex;
+}
+
+#inpt {
+	width: 270px;
+	height: 40px;
+	border: 10px solid black;
+
+}
+
+#contenedorVids{
+	background-color: black;
+	text-align: center;
+}
+
+#butn{
+	width: 100px;
+	height: 40px;
+	margin-left: 5px;
+}
+
+.trucados{
+	display: inline-block;
+	margin-left: 10px;
+	background-color: white;
+	
+	margin-top: 10px;
+
+}
+
+.truca2{
+	display: inline-block;
+	margin-left: 10px;
+	background-color: green;
+	
+	margin-top: 10px;
+
+}
+
+.trucados video{
+	border: 10px solid white;
+	m
+}
+
+.trucados p {
+	text-decoration: underline;
+	margin: 0px;
+	margin-top: 10px;
+}
+
+
+
+
+

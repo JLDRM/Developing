@@ -1,0 +1,14 @@
+{
+  "name": "josep_package",
+  "version": "1.0.0",
+  "description": "paquete nuevo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "nada"
+  ],
+  "author": "josep",
+  "license": "ISC"
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<h1>Título de la página</h1>
+
+	<section>
+		<form action="direccion_envio.html" method="GET" autocomplete="off">
+
+			
+			<div>
+				<label for="idnombre">Tu nombre</label>
+				<input type="text" name="nombre" id="idnombre" placeholder="nombre" value="Ric" maxlength="30" pattern="[A-Z][a-z]*"  spellcheck>
+			</div>
+
+			<div>
+				<label for="idedad">Tu edad</label>
+				<input type="number" name="edad" id="idedad" placeholder="Tu edad" min="14" max="99" value="33" autofocus>
+			</div>
+
+			<div>
+				<label for="idemail">Tu Email</label>
+				<input type="email" name="email" id="idemail" placeholder="email" required="true" value="e@e">
+			</div>
+
+			<div>
+				<label for="idvida">Tu vida</label>
+				<textarea name="vida" id="idvida">rrrr</textarea>
+			</div>
+			
+			<div>
+				<label for="idempl">Num empleados</label>
+				<select name="empleados" id="idempl" >
+					<option value="2345">Arturo</option>
+					<option value="1345" selected="true">Ginebra</option>
+					<option value="9876">Lancelot</option>
+				</select>
+			</div>
+
+			<div>
+				<h3>Tu color favorito:</h3>
+				<div>
+					<label for="idrojo">rojo</label>
+					<input type="checkbox" name="color" id="idrojo" value="rojo">
+				</div>
+				<div>
+					<label for="idazul">azul</label>
+					<input type="checkbox" name="color" id="idazul" value="azul">
+				</div>
+				<div>
+					<label for="idverde">verde</label>
+					<input type="checkbox" name="color" id="idverde" value="verde">
+				</div>
+			</div>
+
+
+			<div>
+				<h3>Tu color favorito:</h3>
+				<div>
+					<label for="idrojor">rojo</label>
+					<input type="radio" name="colorfab" id="idrojor" value="rojo">
+				</div>
+				<div>
+					<label for="idazulr">azul</label>
+					<input type="radio" name="colorfab" id="idazulr" value="azul">
+				</div>
+				<div>
+					<label for="idverder">verde</label>
+					<input type="radio" name="colorfab" id="idverde"r value="verde">
+				</div>
+			</div>
+
+
+			<button>Enviar</button>
+		</form>
+	
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="ricardosbin.js" ></script>
+  
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="./node_modules/rxjs/bundles/Rx.min.js"></script>
+</head>
+<body>
+	
+</body>
+<script>
+	
+	let arr = [0,0,0,0];
+
+
+	var mousemovement= Rx.Observable.fromEvent(window,'mousemove')
+	.map((ev)=> {
+		return {
+			x: ev.clientX,
+			y: ev.clientY
+		};
+		clear(ev);
+		console.log(ev);
+
+	});
+
+	
+	mousemovement
+	.filter(ev=> {
+		console.log(ev); 
+		return ev.x<500 && ev.y<500;
+
+
+	}).scan(pos=>{
+		console.log(pos);
+		return pos},0
+
+
+		).debounceTime(700).subscribe((ev)=>{
+			arr[ev]++;
+			console.log(arr);
+
+		});
+
+		mousemovement.filter(ev=> {
+			return ev.x<500 && ev.y<500;
+
+
+		}).scan(pos=>pos,1).debounceTime(700).subscribe((ev)=>{
+			arr[ev]++;
+			console.log(arr);
+
+		});
+
+		mousemovement
+		.filter(ev=> {
+			return ev.x<500 && ev.y<500;
+
+
+		}).scan(pos=>{
+			return pos},2
+
+
+			).debounceTime(700).subscribe((ev)=>{
+				arr[ev]++;
+
+			});
+
+			mousemovement
+			.filter(ev=> {
+				console.log(ev); 
+				return ev.x500 && ev.y<500;
+
+
+			}).scan(pos=>{
+				return pos},3
+
+
+				).debounceTime(700).subscribe((ev)=>{
+					arr[ev]++;
+
+				});
+
+
+
+
+
+
+
+
+
+			</script>
+
+			</html>
+

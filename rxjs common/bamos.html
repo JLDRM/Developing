@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<button id="btn">Hola</button>
+
+	
+</body>
+</html>
+<script src="./node_modules/rxjs/bundles/Rx.min.js"></script>
+<script>
+/*var button = document.querySelector('btn');
+var clickbtn = Rx.Observable.fromEvent(button,"click")
+.next(selector)
+  
+clickbtn.subscribe((value)=>{
+console.log(value);
+})*/
+
+var observable = Rx.Observable.create((observer)=> {
+	observer.onNext(42);
+	observer.onCompleted(); 
+
+});
+
+var subscription = observable.subscribe( function (value) {// para onNext
+	console.log('Next:', value); },
+
+function (ev) {// para onErro console.log('Error: %s!', ev);
+},
+
+function () {// para onCompleted
+	console.log('Completed!'); }
+	);
+subscription.dispose(); // limpia recursos
+
+
+</script>

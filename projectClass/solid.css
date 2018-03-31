@@ -1,0 +1,14 @@
+ ul {
+    border: 1px solid black;
+    width: 200px;
+    min-height: 100px;
+}
+
+.cart-wrapper {
+    float: left;
+    margin-left: 20px;
+}
+
+.products-wrapper {
+    float: left;
+}

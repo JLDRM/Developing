@@ -1,0 +1,17 @@
+<header>
+	<nav>
+		<ul>
+			<li><a href="#"	id="home">Home</a></li>
+			<li><a href="#"	id="usuarios">Usuarios</a></li>
+			<li><a href="#"	id="pedidos">Pedidos</a></li>
+		</ul>
+	</nav>
+</header>
+
+<h1>Pedidos</h1>
+<ul>
+	{{#.}}
+	<li>{{pid}} -- {{comprador.name}}</li>
+	{{/.}}
+</ul>
+

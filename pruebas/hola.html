@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<button onclick="contador">Contador</button>
+	<span id="joder"></span>
+	
+</body>
+<script>
+	function contar(){
+		var hola = 0;
+		console.log(hola);
+		return function (){
+			document.getElementById('joder').innerHTML= hola++;
+
+		}
+	};
+var contador = contar();
+
+	
+
+</script>
+</html>

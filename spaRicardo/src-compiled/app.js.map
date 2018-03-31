@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/app.js"],"names":["Router","init","subscribe","Utils","loadmenus"],"mappings":";;AAAA,CAAC,YAAY;AACZA,QAAOC,IAAP,GAAcC,SAAd,CAAwB;AAAA,SAAKC,MAAMC,SAAN,EAAL;AAAA,EAAxB;AACA,CAFD","file":"app.js","sourcesContent":["(function () {\r\n\tRouter.init().subscribe(res=>Utils.loadmenus());\r\n})();"]}
